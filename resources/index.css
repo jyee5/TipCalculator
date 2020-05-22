@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #3388cc, #33cc88);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roborto', sans-serif;
+}
+.app {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    background: #fff;
+    border-radius: 16px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    
+   
+}
+.app::after {
+    content: '';
+    display: block;
+    padding-top: calc(100%/(3/4));
+}
+
+.Calculator {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.Calculator header {
+    background-color: #33cc88;
+    padding: 10px 15px;
+
+}
+
+.Calculator header h1 {
+    font-size : 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+}
+main {
+    flex: 1 1 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 20px 15px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    color: #33cc88;
+    font-size: 16px;
+    border-bottom: 3px solid #33cc88;
+    background: #EEE;
+    border-radius: 8px 0px 0px 0px;
+}
+
+.option {
+    position: absolute;
+    appearance: none;
+    outline: none;
+    background: none;
+    display:  flex;
+    flex-direction: row;
+}
+.cost {
+    position: relative;
+    appearance: none;
+    outline: none;
+    background: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+}
+input {
+    width: 100%;
+    outline: none;
+}

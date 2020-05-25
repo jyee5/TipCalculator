@@ -7,6 +7,8 @@ service was they provided
 
 Save time and save money with a tip calculator.
 
+
+💰  💸  💰  💸  💰  💸  💰 
 Instructions:
 
 1.  Enter the amount of your bill

@@ -10,3 +10,6 @@ Save time and save money with a tip calculator.
 Instructions:
 
 1.  Enter the amount of your bill
+2.  Select the satisfaction of your service
+3.  Select how many people are splitting the bill
+4.  Press calculate button to calculate

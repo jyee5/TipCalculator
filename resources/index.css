@@ -28,7 +28,7 @@ body {
 .app::after {
     content: '';
     display: block;
-    padding-top: calc(100%/(3/4));
+    padding-top: calc(100%/(3/6));
 }
 
 .Calculator {
@@ -65,10 +65,24 @@ main {
 
 .input-cost {
     display: flex;
-    margin-bottom: 30px;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
-.before {
+.cost {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-cost p {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-family: "Roborto", sans-serif;
+    border-bottom: 2px solid #33cc88;
+    color: black;
+}
+
+.cost .before {
     display: flex;
     padding: 10px 15px;
     align-items: center;
@@ -77,12 +91,97 @@ main {
     font-size: 20px;
     background-color: rgba(226, 226, 226, 0.849);
 }
-.input-cost input {
+.input-cost .cost input {
     display: block;
     width: 100%;
     border: none;
     outline: none;
     background: none;
 }
+.input-service {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.input-service #service{
+    padding: 25px 30px;
+    border: white;
+    font-size: 12px;
+}
 
+.input-service p {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-family: "Roborto", sans-serif;
+    border-bottom: 2px solid #33cc88;
+    color: black;
+}
+
+.input-people {
+    display: block;
+    margin-bottom: 60px;
+}
+
+.input-people p {
+    padding: 5px 0px;
+    margin-bottom: 10px;
+    font-family: "Roborto", sans-serif;
+    border-bottom: 2px solid #33cc88;
+    color: black;
+    font-size: 16px;
+}
+.input-people input {
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.sub-button{
+    background-color: #33cc88;
+    border: white;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration-color: #33cc88;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 10px auto;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.sub-button:hover {
+    background: #2e8b61;
+    border-bottom-color: #111;
+}
+
+.sub-button:active {
+    position: relative;
+    top: 2px;
+}
+
+#total-tip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+#total-tip:before {
+    content: "Tip amount";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+}
+
+#total-tip sup {
+    font-size: 20px;
+    top: -18px;
+}
+
+#total-tip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
 
